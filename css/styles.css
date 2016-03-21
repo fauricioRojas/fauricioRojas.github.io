@@ -1,0 +1,82 @@
+html, body {
+	overflow-y: hidden; 
+	text-align: center;
+}
+.cover {
+	position: relative;
+    background: url(../img/cover.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    align-items: center;
+    display: flex;
+    height: 93vh;
+    justify-content: center;
+}
+.avatar {
+	position: relative;
+    background: url(../img/avatar.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+}
+label {
+	font-size: 3em;
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+}
+.container .fa {
+	font-size: 40px !important;
+	border-radius: 40%;
+	padding: 15px;
+	border: 2px solid;
+}
+.container .fa:hover {
+	color: white;
+	border-radius: 50%;
+}
+.container .fa:link {   
+    text-decoration: none;   
+}
+.fa-facebook-official {
+	border-color: #3b5998;
+	color: #3b5998;
+}
+.fa-facebook-official:hover {
+	background-color: #3b5998;
+}
+.fa-github {
+	border-color: #333333;
+	color: #333333;
+}
+.fa-github:hover {
+	background-color: #333333;
+}
+.fa-linkedin {
+	border-color: #0077B5;
+	color: #0077B5;
+}
+.fa-linkedin:hover {
+	background-color: #0077B5;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    clear: both;
+    color: #666;
+    background: #141419;
+    line-height: 45px;
+    overflow: hidden;
+    height: 7vh;
+    font-family: 'Nunito', sans-serif;
+}
+footer p a {
+    color: #666;
+}
+footer p a:hover {
+    color: #666;
+    text-decoration: underline;
+}
