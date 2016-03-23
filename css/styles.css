@@ -10,7 +10,7 @@ html, body {
     background-repeat: no-repeat;
     align-items: center;
     display: flex;
-    height: 93vh;
+    height: 83vh;
     justify-content: center;
 }
 .avatar {
@@ -27,38 +27,34 @@ label {
 	color: white;
 	font-family: 'Ubuntu', sans-serif;
 }
-.container .fa {
+.btn-group {
+    background: #191919;
+    height: 10vh;
+}
+.btn-group .fa {
 	font-size: 40px !important;
-	border-radius: 40%;
 	padding: 15px;
-	border: 2px solid;
+    color: white;
 }
-.container .fa:hover {
+.btn-group .fa:hover {
 	color: white;
-	border-radius: 50%;
 }
-.container .fa:link {   
+.btn-group .fa:link {   
     text-decoration: none;   
 }
-.fa-facebook-official {
-	border-color: #3b5998;
-	color: #3b5998;
+.facebook-box {
+    border-right: 1px solid #111111;
 }
-.fa-facebook-official:hover {
-	background-color: #3b5998;
+.facebook-box:hover {
+	background-color: #3B5998;
 }
-.fa-github {
-	border-color: #333333;
-	color: #333333;
+.linkedin-box {
+    border-left: 1px solid #111111;
 }
-.fa-github:hover {
+.github-box:hover {
 	background-color: #333333;
 }
-.fa-linkedin {
-	border-color: #0077B5;
-	color: #0077B5;
-}
-.fa-linkedin:hover {
+.linkedin-box:hover {
 	background-color: #0077B5;
 }
 
@@ -67,8 +63,8 @@ footer {
     width: 100%;
     clear: both;
     color: #666;
-    background: #141419;
-    line-height: 45px;
+    background: #111111;
+    line-height: 40px;
     overflow: hidden;
     height: 7vh;
     font-family: 'Nunito', sans-serif;
