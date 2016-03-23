@@ -29,11 +29,10 @@ label {
 }
 .btn-group {
     background: #191919;
-    height: 10vh;
+    height: 12vh;
 }
 .btn-group .fa {
-	font-size: 40px !important;
-	padding: 15px;
+	font-size: 40px;
     color: white;
 }
 .btn-group .fa:hover {
@@ -61,12 +60,10 @@ label {
 /* Footer */
 footer {
     width: 100%;
-    clear: both;
     color: #666;
     background: #111111;
-    line-height: 40px;
-    overflow: hidden;
-    height: 7vh;
+    line-height: 35px;
+    height: 5vh;
     font-family: 'Nunito', sans-serif;
 }
 footer p a {
@@ -75,4 +72,25 @@ footer p a {
 footer p a:hover {
     color: #666;
     text-decoration: underline;
+}
+
+.retraso {
+    -webkit-animation-delay: 0.5s;
+    -moz-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+.retraso-1 {
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    animation-delay: 1s;
+}
+.retraso-2 {
+    -webkit-animation-delay: 1.5s;
+    -moz-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+}
+.retraso-3 {
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    animation-delay: 2s;
 }
