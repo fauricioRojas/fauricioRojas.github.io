@@ -47,11 +47,17 @@ label {
 .facebook-box:hover {
 	background-color: #3B5998;
 }
-.linkedin-box {
-    border-left: 1px solid #111111;
+.instagram-box {
+    border-right: 1px solid #111111;   
+}
+.instagram-box:hover {
+    background-color: #125688;
 }
 .github-box:hover {
-	background-color: #333333;
+    background-color: #333333;
+}
+.linkedin-box {
+    border-left: 1px solid #111111;
 }
 .linkedin-box:hover {
 	background-color: #0077B5;
@@ -93,4 +99,9 @@ footer p a:hover {
     -webkit-animation-delay: 2s;
     -moz-animation-delay: 2s;
     animation-delay: 2s;
+}
+.retraso-4 {
+    -webkit-animation-delay: 2s.5;
+    -moz-animation-delay: 2.5s;
+    animation-delay: 2.5s;
 }
