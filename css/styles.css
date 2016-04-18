@@ -1,20 +1,8 @@
 html, body {
-	overflow-y: hidden; 
-	text-align: center;
-}
-.cover {
-	position: relative;
-    background: url(../img/cover.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    align-items: center;
-    display: flex;
-    height: 83vh;
-    justify-content: center;
+    font-family: 'Roboto', sans-serif;
 }
 .avatar {
-	position: relative;
+    position: relative;
     background: url(../img/avatar.jpg);
     background-size: cover;
     border-radius: 50%;
@@ -22,86 +10,152 @@ html, body {
     height: 200px;
     display: inline-block;
 }
-label {
-	font-size: 3em;
-	color: white;
-	font-family: 'Ubuntu', sans-serif;
+.big-size {
+    height: 100vh;
 }
-.btn-group {
-    background: #191919;
-    height: 12vh;
+.small-size {
+    height: 35vh;
 }
-.btn-group .fa {
-	font-size: 40px;
-    color: white;
+.box-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.btn-group .fa:hover {
-	color: white;
+.title-1 {
+	font-size: 4em;
+    font-family: 'Ubuntu Mono';
+    font-weight: 500;
 }
-.btn-group .fa:link {   
-    text-decoration: none;   
+.title-2 {
+    font-size: 3em;
+    font-weight: 500;
+    font-family: 'Ubuntu Mono';
 }
-.facebook-box {
-    border-right: 1px solid #111111;
+.text {
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    text-align: justify;
 }
-.facebook-box:hover {
-	background-color: #3B5998;
+.text-2 {
+    font-size: 1.1em;
 }
-.instagram-box {
-    border-right: 1px solid #111111;   
+.text-center {
+    text-align: center;
 }
-.instagram-box:hover {
-    background-color: #125688;
+.be-blue {
+    background: #2196F3;
 }
-.github-box:hover {
-    background-color: #333333;
+.be-gray {
+    background: #DCDCDC;
 }
-.linkedin-box {
-    border-left: 1px solid #111111;
+.be-white {
+    background: #FFFFFF;
 }
-.linkedin-box:hover {
-	background-color: #0077B5;
+.be-green {
+    background: #43CD80;
 }
-
-/* Footer */
+.purple {
+    color: #5E4352;
+}
+.black {
+    color: #111111;
+}
+.white {
+    color: #FFFFFF;
+}
+.red {
+    color: #AF3030;
+}
 footer {
-    width: 100%;
-    color: #666;
     background: #111111;
-    line-height: 35px;
-    height: 5vh;
-    font-family: 'Nunito', sans-serif;
-}
-footer p a {
-    color: #666;
 }
 footer p a:hover {
     color: #666;
     text-decoration: underline;
 }
-
 .retraso {
     -webkit-animation-delay: 0.5s;
     -moz-animation-delay: 0.5s;
     animation-delay: 0.5s;
 }
-.retraso-1 {
-    -webkit-animation-delay: 1s;
-    -moz-animation-delay: 1s;
-    animation-delay: 1s;
+.purple .fa {
+	font-size: 40px;
 }
-.retraso-2 {
-    -webkit-animation-delay: 1.5s;
-    -moz-animation-delay: 1.5s;
-    animation-delay: 1.5s;
+.purple .fa:hover {
+    transform: scale(1.2);
+    color: #BE2571;
 }
-.retraso-3 {
-    -webkit-animation-delay: 2s;
-    -moz-animation-delay: 2s;
-    animation-delay: 2s;
+.card {
+    border: 1px solid #E5E5E5;
+    padding: 10px;
+    border-radius: 3px;
+    margin: 5px 0px 5px 0px;
+    -moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
 }
-.retraso-4 {
-    -webkit-animation-delay: 2s.5;
-    -moz-animation-delay: 2.5s;
-    animation-delay: 2.5s;
+
+@media screen and (min-width: 240px) {
+    .title-1 {
+        font-size: 3em;
+    }
+    .title-2 {
+        font-size: 2em;
+    }
+    .text {
+        font-size: 1.2em;
+    }
+    .text-2 {
+        font-size: 1.1em;
+    }
+}
+@media screen and (min-width: 360px) {
+    .title-1 {
+        font-size: 3.5em;
+    }
+    .title-2 {
+        font-size: 2.5em;
+    }
+    .text {
+        font-size: 1.4em;
+    }
+    .text-2 {
+        font-size: 1.2em;
+    }
+}
+@media screen and (min-width: 640px) {
+    .title-1 {
+        font-size: 5em;
+    }
+    .title-2 {
+        font-size: 4em;
+    }
+    .text {
+        font-size: 2em;
+    }
+    .text-2 {
+        font-size: 1.8em;
+    }
+    .avatar {
+        width: 300px;
+        height: 300px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .title-1 {
+        font-size: 4em;
+    }
+    .title-2 {
+        font-size: 3em;
+    }
+    .text {
+        font-size: 1.5em;
+    }
+    .text-2 {
+        font-size: 1.1em;
+    }
+    .avatar {
+        width: 200px;
+        height: 200px;
+    }
 }
