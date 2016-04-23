@@ -71,7 +71,6 @@ function getNewMask(subredes, clase) {
 function printInfo(ip, clase, defaultMask, hosts, subredes) {
     var box = document.createElement('div');
         div = document.createElement('div'),
-        separator = document.createElement('p'),
         h3 = document.createElement('h3'),
         binary = getNewMask(subredes, clase);
 
@@ -108,9 +107,7 @@ function printInfo(ip, clase, defaultMask, hosts, subredes) {
     div.appendChild(document.createTextNode('Sub networks: ' + Math.pow(2, subredes)));
     doc.text(20, 110, 'Sub networks:   ' + Math.pow(2, subredes));
 
-    separator.appendChild(document.createTextNode('-----------------------------------------------------------------------------'));
     box.appendChild(div);
-    box.appendChild(separator);
 
     document.getElementById('content').appendChild(box);
 }
@@ -127,7 +124,7 @@ function printSubredes(arraySubnets, bitsHosts) {
         line = 140;
 
     h3.appendChild(document.createTextNode('IP - BROADCAST - INICIAL - FINAL'));
-    doc.text(20, 130, '         IP             BROADCAST      INICIAL             FINAL');
+    doc.text(20, 130, '         IP                BROADCAST            INICIAL               FINAL');
     box.appendChild(h3);
     for ( ; i < length; i ++) {
         div = document.createElement('div');
@@ -136,7 +133,7 @@ function printSubredes(arraySubnets, bitsHosts) {
         start = arraySubnets[i].start[0] + '.' + arraySubnets[i].start[1] + '.' + arraySubnets[i].start[2] + '.' + arraySubnets[i].start[3];
         finish = arraySubnets[i].finish[0] + '.' + arraySubnets[i].finish[1] + '.' + arraySubnets[i].finish[2] + '.' + arraySubnets[i].finish[3];
 
-        doc.text(20, line, ip + '        ' + broadcast + '          ' + start + '        ' + finish);
+        doc.text(20, line, ip + '    ' + broadcast + '    ' + start + '    ' + finish);
 
         div.appendChild(document.createTextNode(ip + ' - ' + broadcast + ' - ' + start + ' - ' + finish));
         box.appendChild(div);
