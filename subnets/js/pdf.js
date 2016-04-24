@@ -1,5 +1,5 @@
 /* ################### PDF ################### */
-var doc = new jsPDF();
+var doc;
 
 $('#pdf').click(function () {
     doc.save('Lista de subredes.pdf')
@@ -69,14 +69,14 @@ function getNewMask(subredes, clase) {
 }
 
 function printInfo(ip, clase, defaultMask, hosts, subredes) {
-    var box = document.createElement('div');
+    var box = document.createElement('pre');
         div = document.createElement('div'),
         h3 = document.createElement('h3'),
         binary = getNewMask(subredes, clase);
 
-    h3.appendChild(document.createTextNode('LISTA DE SUB REDES'));
+    h3.appendChild(document.createTextNode('Subnets List'));
     box.appendChild(h3);
-    doc.text(20, 30, '                                       LISTA DE SUBREDES');
+    doc.text(20, 30, '                                           SUBNETS LIST');
 
     div.appendChild(document.createTextNode('Class: ' + clase));
     box.appendChild(div);
@@ -104,17 +104,23 @@ function printInfo(ip, clase, defaultMask, hosts, subredes) {
     doc.text(20, 100, 'Usable hosts:    ' + (Math.pow(2, hosts) - 2));
 
     div = document.createElement('div');
-    div.appendChild(document.createTextNode('Sub networks: ' + Math.pow(2, subredes)));
-    doc.text(20, 110, 'Sub networks:   ' + Math.pow(2, subredes));
+    div.appendChild(document.createTextNode('Sub nets: ' + Math.pow(2, subredes)));
+    doc.text(20, 110, 'Sub nets:           ' + Math.pow(2, subredes));
 
+    box.setAttribute("class", "text-center");
     box.appendChild(div);
 
     document.getElementById('content').appendChild(box);
 }
+
 function printSubredes(arraySubnets, bitsHosts) {
-    var box = document.createElement('div'),
-        div,
-        h3 = document.createElement('h3'), 
+    var table = document.createElement('table'),
+        thead = document.createElement('thead'),
+        tbody = document.createElement('tbody'),
+        tr = document.createElement('tr'),
+        th = document.createElement('th'),
+        center = document.createElement('center'),
+        td,
         i = 0,
         length = arraySubnets.length,
         ip,
@@ -123,11 +129,36 @@ function printSubredes(arraySubnets, bitsHosts) {
         finish,
         line = 140;
 
-    h3.appendChild(document.createTextNode('IP - BROADCAST - INICIAL - FINAL'));
-    doc.text(20, 130, '         IP                BROADCAST            INICIAL               FINAL');
-    box.appendChild(h3);
+    table.setAttribute("class", "table table-bordered margin-top text-center");
+    table.appendChild(thead);
+    table.appendChild(tbody);
+    thead.appendChild(tr);
+    
+    center.appendChild(document.createTextNode('IP'));
+    th.appendChild(center);
+    tr.appendChild(th);
+    
+    th = document.createElement('th');
+    center = document.createElement('center');
+    center.appendChild(document.createTextNode('Broadcast'));
+    th.appendChild(center);
+    tr.appendChild(th);
+
+    th = document.createElement('th');
+    center = document.createElement('center');
+    center.appendChild(document.createTextNode('First usable'));
+    th.appendChild(center);
+    tr.appendChild(th);
+
+    th = document.createElement('th');
+    center = document.createElement('center');
+    center.appendChild(document.createTextNode('Last usable'));
+    th.appendChild(center);
+    tr.appendChild(th);
+
+    doc.text(20, 130, '         IP                BROADCAST            START               FINISH');
+    
     for ( ; i < length; i ++) {
-        div = document.createElement('div');
         ip = arraySubnets[i].ip[0] + '.' + arraySubnets[i].ip[1] + '.' + arraySubnets[i].ip[2] + '.' + arraySubnets[i].ip[3] + '/' + (32 - bitsHosts);
         broadcast = arraySubnets[i].broadcast[0] + '.' + arraySubnets[i].broadcast[1] + '.' + arraySubnets[i].broadcast[2] + '.' + arraySubnets[i].broadcast[3];
         start = arraySubnets[i].start[0] + '.' + arraySubnets[i].start[1] + '.' + arraySubnets[i].start[2] + '.' + arraySubnets[i].start[3];
@@ -135,8 +166,26 @@ function printSubredes(arraySubnets, bitsHosts) {
 
         doc.text(20, line, ip + '    ' + broadcast + '    ' + start + '    ' + finish);
 
-        div.appendChild(document.createTextNode(ip + ' - ' + broadcast + ' - ' + start + ' - ' + finish));
-        box.appendChild(div);
+        tr = document.createElement('tr');
+
+        td = document.createElement('td');
+        td.appendChild(document.createTextNode(ip));
+        tr.appendChild(td);
+        
+        td = document.createElement('td');
+        td.appendChild(document.createTextNode(broadcast));
+        tr.appendChild(td);
+
+        td = document.createElement('td');
+        td.appendChild(document.createTextNode(start));
+        tr.appendChild(td);
+
+        td = document.createElement('td');
+        td.appendChild(document.createTextNode(finish));
+        tr.appendChild(td);
+
+        tbody.appendChild(tr);
+
         if(line === 270) {
             doc.addPage();
             line = 30;
@@ -146,7 +195,7 @@ function printSubredes(arraySubnets, bitsHosts) {
         }
     }
 
-    document.getElementById('content').appendChild(box);
+    document.getElementById('content').appendChild(table);
 }
 
 function hostAndSubredes(type, bits, clase) {
@@ -319,6 +368,11 @@ function subNets(ip, bitsHosts, bitsSubnets, clase) {
 }
 
 $('#calcular').click(function() {
+    doc = new jsPDF();
+    $('#ip-msg').text('');
+    $('#number-msg').text('');
+    $('#content').empty();
+
     var ip = $('#ip').val(),
         type = $('#type').val(),
         bits = parseInt($('#number').val()),
@@ -332,10 +386,10 @@ $('#calcular').click(function() {
             subNets(ip, hostSubredes[0], hostSubredes[1], classDefaultMask[0]);
         }
         else {
-            $('#msg').text('Invalid IP.');
+            $('#ip-msg').text('Invalid IP.');
         }
     }
     else {
-        $('#msg').text('Enter a hosts/subnets number.');
+        $('#number-msg').text('Enter a hosts/subnets number.');
     }
 });
