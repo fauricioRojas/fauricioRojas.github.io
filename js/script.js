@@ -38,7 +38,7 @@ const projects = [
     role: 'JavaScript Developer',
     technologies: ['JavaScript', 'ReactJS', 'Redux', 'SailsJS', 'RethinkDB', 'Vertica', 'Docker', 'SCSS', 'Plotly.JS', 'Grommet', 'Jest', 'Enzyme'],
     responsibilities: ['Bug fixing.', 'Develop new features.', 'Create unit testing.', 'Consulting.']
-  },
+  }
   // {
   //   name: 'MNG',
   //   description: '',
