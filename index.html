@@ -4,62 +4,57 @@
 	<title>Fauricio Rojas Hernández</title>
 	<meta charset="utf-8">
 	<link rel="shortcut icon" href="./img/logo.ico">
-	<link rel="stylesheet" type="text/css" href="./css/animate.css">
 	<link rel="stylesheet" type="text/css" href="./css/styles.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
-	<link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
 <body>
-	<section class="box-flex big-size be-blue">
-		<section class="text-center">
-			<section class="avatar animated zoomIn retraso"></section>
-			<section>
-				<label class="title-1 white animated fadeInUpBig" id="greeting-container"></label>
-			</section>
-		</section>
-	</section>
-	<section class="box-flex big-size be-gray">
-		<section>
-			<section class="text-center">
-				<label class="title-2">About me</label>
-			</section>
-			<section class="text purple container" id="description-container"></section>
-		</section>
-	</section>
-	<section class="box-flex big-size be-white">
-		<section>
-			<section class="text-center">
-				<label class="title-2 black">My skills</label>
-			</section>
-			<section class="text purple container">
-				<section class="col-md-12 col-sm-12 text-center" id="skills-container"></section>
-			</section>
-		</section>
-	</section>
-	<section class="box-flex big-size be-green">
-		<section>
-			<section class="text-center">
-				<label class="title-2 black">Follow me at</label>
-			</section>
-			<section class="text-center purple box-flex" id="social-container"></section>
-		</section>
-	</section>
-	<footer class="box-flex small-size white">
-		<section class="text-center">
-			<section>
-				<label class="title-2 white">Contact</label>
-			</section>
-			<section class="text-2">
-				<p><span class="fa fa-envelope-o"></span>&nbsp;&nbsp;<a class="white" href="mailto:fauri.1994@gmail.com">fauri.1994@gmail.com</a></p>
-				<p><span class="fa fa-skype"></span>&nbsp;&nbsp;fauricio_rojas</a></p>
-				<p class="text-center" id="year"></p>
-			</section>
-		</section>
-	</footer>
-
+  <div class="sidebar-menu">
+    <a href="#" class="times">&times;</a>
+  </div>
+	<header class="d-flex flex-row-reverse p-3">
+    <i class="fas fa-bars"></i>
+  </header>
+  <section class="container body">
+    <section class="row" id="about">
+      <section class="offset-lg-2 col-lg-4 offset-md-2 col-md-4 text-center">
+        <div class="hero-image-container">
+          <div class="hero-image"></div>
+        </div>
+        <div class="name mt-3 col-lg-12 col-md-12 font-weight-bold"></div>
+        <div class="occupation mb-3 col-lg-12 col-md-12 font-weight-light"></div>
+      </section>
+      <section class="about text-justify col-lg-4 col-md-4"></section>
+    </section>
+    <section class="row col-lg-12 col-md-12" id="experience">
+      <label class="badge-dark font-weight-bold pr-3 pl-3 mb-4">Experience</label>
+      <section class="experience text-justify"></section>
+    </section>
+    <section class="row col-lg-12 col-md-12" id="skills">
+      <label class="badge-dark font-weight-bold pr-3 pl-3 mb-4">Skills</label>
+      <section class="skills"></section>
+    </section>
+    <section class="row col-lg-12 col-md-12" id="projects">
+      <label class="badge-dark font-weight-bold pr-3 pl-3 mb-4">Projects</label>
+      <section class="projects row no-gutters clearfix"></section>
+    </section>
+  </section>
+  <footer id="contact">
+    <section class="row p-4 text-center text-white">
+      <section class="col-lg-4 col-md-4">
+        <span class="far fa-envelope"></span>
+        &nbsp;
+        <a class="text-white" href="mailto:fauri.1994@gmail.com">fauri.1994@gmail.com</a>
+      </section>
+      <section class="col-lg-4 col-md-4">
+        <span class="fab fa-skype"></span>
+        &nbsp;fauricio_rojas
+      </section>
+      <section class="col-lg-4 col-md-4 year"></section>
+      <section class="social mt-3 col-lg-12 col-md-12"></section>
+    </section>
+  </footer>
 	<script type="text/javascript" src="./js/script.js"></script>
 </body>
 </html>
