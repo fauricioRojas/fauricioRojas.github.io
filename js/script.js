@@ -49,19 +49,19 @@ const projects = [
 ];
 const socialNets = [
   {
-    className: 'btn text-white fab fa-facebook-square',
+    className: 'text-white fab fa-facebook-square',
     link: 'https://www.facebook.com/fauricioRojas'
   },
   {
-    className: 'btn text-white fab fa-instagram',
+    className: 'text-white fab fa-instagram',
     link: 'https://www.instagram.com/fauriciorojas'
   },
   {
-    className: 'btn text-white fab fa-github',
+    className: 'text-white fab fa-github',
     link: 'https://github.com/fauricioRojas'
   },
   {
-    className: 'btn text-white fab fa-linkedin',
+    className: 'text-white fab fa-linkedin',
     link: 'https://www.linkedin.com/in/fauriciorojas'
   }
 ];
