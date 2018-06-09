@@ -74,11 +74,13 @@ const menuItems = [
   'contact'
 ];
 function setName() {
-  document.querySelector('.name').innerHTML = name;
+  document.querySelector('span.name').innerHTML = name;
+  document.querySelector('div.name').innerHTML = name;
 }
 
 function setOccupation() {
-  document.querySelector('.occupation').innerHTML = occupation;
+  document.querySelector('span.occupation').innerHTML = occupation;
+  document.querySelector('div.occupation').innerHTML = occupation;
 }
 
 function setAbout() {
@@ -154,7 +156,6 @@ function setSocialNets() {
     a.setAttribute('href', socialNet.link);
     a.setAttribute('target', '_blank');
     a.addEventListener('click', () => {
-      console.log('fdds')
       document.querySelector('.sidebar-menu').style.width = '0';
     });
 
@@ -167,14 +168,14 @@ function setYear() {
   document.querySelector('.year').innerHTML = `&COPY; ${year}`;
 }
 
-function setSidebarMenuItems() {
-  const sidebar = document.querySelector('.sidebar-menu');
+function setSidebarMenuItems(className) {
+  const container = document.querySelector(className);
 
   for (let item of menuItems) {
     const a = document.createElement('a');
     a.appendChild(document.createTextNode(item));
     a.setAttribute('href', `#${item}`);
-    sidebar.appendChild(a);
+    container.appendChild(a);
   }
 }
 
@@ -193,4 +194,5 @@ setProjects();
 setSocialNets();
 setSkills();
 setYear();
-setSidebarMenuItems();
+setSidebarMenuItems('.links-container');
+setSidebarMenuItems('.sidebar-menu');
