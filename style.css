@@ -1,0 +1,317 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 300;
+  /* font-size: 16px; */
+  background-color: #E9ECF4;
+}
+
+a {
+	text-decoration: none;
+}
+
+.section-title {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.section-title::after {
+	content: '';
+	margin: 0.625rem 0; 
+	display: block;
+	background-color: #868686;
+	width: 6em; 
+	height: 1px;
+}
+
+
+.container {
+  width: 90%;
+  max-width: 75em;
+  margin: 1em auto;
+  display: grid;
+  gap: 1.25em;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, auto);
+  grid-template-areas:
+    "header          header          header"
+    "info            info            info"
+    "current-project current-project current-project"
+    "projects        projects        skills"
+    "projects        projects        npm-packages"
+    "footer          footer          footer";
+}
+
+header {
+	grid-area: header;
+	padding: 1.25em;
+  background: #FFF;
+  border-radius: 4px;
+  box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+header > .avatar {
+  border-radius: 50%;
+  background-image: url(assets/avatar.svg);
+  height: 7em;
+  width: 7em;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 1em;
+}
+header > h1 {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
+  letter-spacing: 3px;
+}
+header > h4 {
+  font-size: 1em;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.info {
+  grid-area: info;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  color: #FFF;
+  border-radius: 4px;
+}
+.info > .experience,
+.info > .about-me {
+  background-color: #000;
+  padding: 1.25rem;
+  border-radius: 4px;
+}
+.info > .experience > p,
+.info > .about-me > p {
+  line-height: 1.5625rem;
+  font-weight: 300;
+  color: #868b8d;
+}
+
+.current-project {
+  grid-area: current-project;
+  background: #fff;
+  padding: 1.25rem;
+  border-radius: 4px;
+  display: grid;
+  row-gap: 0.625rem;
+}
+.current-project > h2 {
+  font-size: 1.5em;
+}
+.current-project > h4 {
+  font-size: 1em;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #868b8d;
+}
+.current-project > .project-technologies {
+  display: flex;
+  flex-flow: row wrap;
+  font-size: 0.9em;
+}
+.current-project > .project-technologies > span {
+  padding: .25rem .4rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #17a2b8;
+  margin: 0.25rem;
+}
+.current-project > .project-responsibilities {
+  display: grid;
+  row-gap: 0.25em;
+  grid-template-rows: 1fr;
+  padding-left: 1.25em;
+  font-size: 1em;
+}
+
+.projects {
+  grid-area: projects;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+.projects > .project-card {
+  background: #fff;
+  box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
+  padding: 1.25rem;
+  border-radius: 4px;
+  display: grid;
+  row-gap: 0.625rem;
+}
+.projects > .project-card > h2 {
+  font-size: 1.5em;
+}
+.projects > .project-card > h4 {
+  font-size: 1em;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #868b8d;
+}
+.projects > .project-card > .project-technologies {
+  display: flex;
+  flex-flow: row wrap;
+  font-size: 0.9em;
+}
+.projects > .project-card > .project-technologies > span {
+  padding: .25rem .4rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #17a2b8;
+  margin: 0.25rem;
+}
+.projects > .project-card > .project-responsibilities {
+  display: grid;
+  row-gap: 0.25em;
+  grid-template-rows: 1fr;
+  padding-left: 1.25em;
+  font-size: 1em;
+}
+
+.skills {
+  grid-area: skills;
+  padding: 1.25rem;
+  min-height: 100px;
+  background: #000;
+  color: #FFF;
+  border-radius: 4px;
+}
+.skills > section {
+  display: flex;
+  flex-flow: row wrap;
+  color: #868b8d;
+}
+.skills > section > span {
+  padding: 0.5rem;
+  font-size: 1em;
+  cursor: default;
+}
+.skills > section > span:hover {
+  background: #262626;
+}
+
+.npm-packages {
+  grid-area: npm-packages;
+  background: #fff;
+  padding: 1.25rem;
+  border-radius: 4px;
+}
+.npm-packages > section {
+  display: flex;
+  flex-flow: row wrap;
+}
+.npm-packages > section > a {
+	color: #fff;
+	cursor: pointer;
+	padding: 0.625em; 
+	background-color: #262626;
+  letter-spacing: 1px;
+  margin: 0.25rem;
+}
+.npm-packages > section > a:hover {
+	background: #000;
+	text-decoration: none;
+}
+
+footer {
+  grid-area: footer;
+  background: #fff;
+  font-size: 1.1em;
+  padding: 1.25rem;
+  text-align: right;
+  box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
+  border-radius: 4px;
+}
+
+/* @media (max-width: 1200px) {
+  html {
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 992px) {
+  html {
+		font-size: 16px;
+	}
+} */
+
+@media (max-width: 768px) {
+  html {
+		font-size: 14px;
+  }
+
+  .container {
+    grid-template-areas:
+      "header          header          header"
+      "info            info            info"
+      "current-project current-project current-project"
+      "projects        projects        projects"
+      "skills          skills          skills"
+      "npm-packages    npm-packages    npm-packages"
+      "footer          footer          footer";
+  }
+}
+
+@media (max-width: 576px) {
+  html {
+		font-size: 12px;
+  }
+  
+  .container {
+    width: 100%;
+    margin: 0;
+    gap: 0.625em;
+    grid-template-areas:
+      "header          header          header"
+      "info            info            info"
+      "current-project current-project current-project"
+      "projects        projects        projects"
+      "skills          skills          skills"
+      "npm-packages    npm-packages    npm-packages"
+      "footer          footer          footer";
+  }
+
+  header {
+    border-radius: 0px;
+  }
+
+  header,
+  .info > .experience,
+  .info > .about-me,
+  .current-project,
+  .projects > .project-card,
+  .skills,
+  .npm-packages,
+  footer {
+    border-radius: 0px;
+  }
+
+  .info,
+  .projects {
+    gap: 0.625em;
+  }
+
+  .info {
+    grid-template-columns: 1fr;
+  }
+}

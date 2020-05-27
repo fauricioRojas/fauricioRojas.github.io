@@ -46,7 +46,7 @@ header .fa-bars {
 }
 .hero-image {
   border-radius: 50%;
-  background-image: url(../img/myAvatar.svg);
+  background-image: url(../../assets/avatar.svg);
   height: 150px;
   width: 150px;
   background-size: cover;
