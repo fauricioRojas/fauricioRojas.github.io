@@ -282,6 +282,10 @@ footer {
     border-radius: 0px;
   }
 
+  header > h1 {
+    font-size: 1.4em;
+  }
+
   header,
   .info > .experience,
   .info > .about-me,
