@@ -105,7 +105,7 @@ header > h4 {
 
 .current-project {
   grid-area: current-project;
-  background: #fff;
+  background: #FFF;
   padding: 1.25rem;
   border-radius: 4px;
   display: grid;
@@ -118,7 +118,7 @@ header > h4 {
   font-size: 1em;
   font-weight: 300;
   letter-spacing: 1px;
-  color: #868b8d;
+  color: #868B8D;
 }
 .current-project > .project-technologies {
   display: flex;
@@ -130,9 +130,9 @@ header > h4 {
   font-weight: 300;
   letter-spacing: 1px;
   border-radius: 4px;
-  color: #fff;
-  background-color: #17a2b8;
   margin: 0.25rem;
+  color: #0052CC;
+  background-color: #DEEBFF;
 }
 .current-project > .project-responsibilities {
   display: grid;
@@ -149,7 +149,7 @@ header > h4 {
   gap: 1.25rem;
 }
 .projects > .project-card {
-  background: #fff;
+  background: #FFF;
   box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
   padding: 1.25rem;
   border-radius: 4px;
@@ -163,7 +163,7 @@ header > h4 {
   font-size: 1em;
   font-weight: 300;
   letter-spacing: 1px;
-  color: #868b8d;
+  color: #868B8D;
 }
 .projects > .project-card > .project-technologies {
   display: flex;
@@ -175,8 +175,8 @@ header > h4 {
   font-weight: 300;
   letter-spacing: 1px;
   border-radius: 4px;
-  color: #fff;
-  background-color: #17a2b8;
+  color: #0052CC;
+  background-color: #DEEBFF;
   margin: 0.25rem;
 }
 .projects > .project-card > .project-responsibilities {
@@ -191,27 +191,28 @@ header > h4 {
   grid-area: skills;
   padding: 1.25rem;
   min-height: 100px;
-  background: #000;
-  color: #FFF;
+  background: #FFF;
   border-radius: 4px;
+  box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
 }
 .skills > section {
   display: flex;
   flex-flow: row wrap;
-  color: #868b8d;
 }
 .skills > section > span {
-  padding: 0.5rem;
+  padding: 0.4rem;
   font-size: 1em;
   cursor: default;
 }
 .skills > section > span:hover {
-  background: #262626;
+  border-radius: 4px;
+  color: #0052CC;
+  background-color: #DEEBFF;
 }
 
 .npm-packages {
   grid-area: npm-packages;
-  background: #fff;
+  background: #FFF;
   padding: 1.25rem;
   border-radius: 4px;
 }
@@ -220,7 +221,7 @@ header > h4 {
   flex-flow: row wrap;
 }
 .npm-packages > section > a {
-  color: #fff;
+  color: #FFF;
   cursor: pointer;
   padding: 0.625em; 
   background-color: #262626;
@@ -235,7 +236,6 @@ header > h4 {
 footer {
   grid-area: footer;
   background: #fff;
-  font-size: 1.1em;
   padding: 1.25rem;
   text-align: right;
   box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
