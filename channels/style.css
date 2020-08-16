@@ -7,7 +7,7 @@
 body {
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 14px;
   background-color: #E9ECF4;
 }
 
@@ -49,6 +49,9 @@ main > article > div > span {
 }
 
 @media (min-width: 768px) {
+  body {
+    font-size: 16px;
+  }
   .container {
     max-width: 720px;
   }
