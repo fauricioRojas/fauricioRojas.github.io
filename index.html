@@ -5,62 +5,62 @@
   <link rel="shortcut icon" href="./assets/logo.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fauricio Rojas Hernández</title>
-
   <!-- Inter Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-
   <!-- Tailwind -->
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- AOS Animations -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
-
 <body class="bg-slate-50 font-[Inter] text-slate-800">
-
   <div class="max-w-4xl mx-auto px-4 py-10 space-y-10">
-
     <!-- HEADER -->
-    <header class="flex flex-col items-center text-center space-y-4">
+    <header data-aos="fade-down" class="flex flex-col items-center text-center space-y-4">
       <div class="avatar mb-4 rounded-full w-[7em] h-[7em] bg-cover bg-no-repeat"></div>
 
       <div>
         <h1 class="text-4xl font-semibold tracking-tight mb-2">
           Fauricio Rojas Herna&#769;ndez
         </h1>
-        <p class="text-slate-500 text-lg">
+        <p class="text-slate-500 text-lg mb-2">
           Senior Software Engineer
+        </p>
+        <p class="flex items-center justify-center gap-2 text-sm text-slate-400">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 21c-4.418-4.418-8-7.582-8-11a8 8 0 1116 0c0 3.418-3.582 6.582-8 11z" />
+          </svg>
+          Alajuela, Costa Rica
         </p>
       </div>
     </header>
-
     <!-- ABOUT -->
-    <section class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm">
-      <h2 class="text-xl font-semibold tracking-tight mb-3">About</h2>
-      <p class="text-slate-600 leading-relaxed">
-        Hey! I'm Fauricio, I'm from Costa Rica. I specialize in full stack development with a strong focus on JavaScript.
-        I enjoy building scalable applications, learning new technologies, and creating clean user experiences.
-        In my free time I do exercises, play videogames and keep improving my skills.
-      </p>
+    <section class="space-y-4">
+      <h2 data-aos="fade-up" class="text-xl font-semibold tracking-tight">About</h2>
+      <div data-aos="fade-up" class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm">
+        <p class="text-slate-600 leading-relaxed">
+          Hey! I'm Fauricio, I'm from Costa Rica. I specialize in full stack development with a strong focus on JavaScript.
+          I enjoy building scalable applications, learning new technologies, and creating clean user experiences.
+          In my free time I do exercises, play videogames and keep improving my skills.
+        </p>
+      </div>
     </section>
-
     <!-- EXPERIENCE -->
-    <section class="space-y-6">
-      <h2 class="text-xl font-semibold tracking-tight">Experience</h2>
-
-      <!-- JOB -->
-      <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200">
+    <section class="space-y-4">
+      <h2 data-aos="fade-up" class="text-xl font-semibold tracking-tight">Experience</h2>
+      <!-- STONECASTLE -->
+      <div data-aos="fade-up" class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200">
         <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-3">
           <h3 class="text-lg font-medium">StoneCastle</h3>
           <span class="text-sm text-slate-400">Full Stack Developer</span>
         </div>
-
         <ul class="list-disc list-inside text-slate-600 text-sm space-y-1 mb-4">
-          <li>Fix bugs and improve performance</li>
+          <li>Fix application bugs, styles and malfunction</li>
           <li>Develop new features</li>
           <li>Create unit tests</li>
           <li>Consulting</li>
         </ul>
-
         <div class="flex flex-wrap gap-2">
           <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">TypeScript</span>
           <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">ReactJS</span>
@@ -79,65 +79,20 @@
           <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">InversifyJS</span>
         </div>
       </div>
-
-      <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200">
-        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-3">
-          <h3 class="text-lg font-medium">Hiring Tool</h3>
-          <span class="text-sm text-slate-400">Front End Developer</span>
-        </div>
     
-        <ul class="list-disc list-inside text-slate-600 text-sm space-y-1 mb-4">
-          <li>Fix application bugs, styles and malfunction</li>
-          <li>Develop new features</li>
-          <li>Consulting</li>
-        </ul>
-    
-        <div class="flex flex-wrap gap-2">
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">JavaScript</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">AngularJS</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">MySQL</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">SCSS</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">HTML5</span>
-        </div>
-      </div>
-
-      <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200">
-        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-3">
-          <h3 class="text-lg font-medium">Arcsight Investigate</h3>
-          <span class="text-sm text-slate-400">JavaScript Developer</span>
-        </div>
-    
-        <ul class="list-disc list-inside text-slate-600 text-sm space-y-1 mb-4">
-          <li>Fix application bugs, styles and malfunction</li>
-          <li>Develop new features</li>
-          <li>Create unit testing</li>
-          <li>Consulting</li>
-        </ul>
-    
-        <div class="flex flex-wrap gap-2">
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">JavaScript</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">React</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">Redux</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">SailsJS</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">Docker</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">SCSS</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">Jest</span>
-        </div>
-      </div>
-    
-      <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200">
+      <!-- BUNDLEFI -->
+      <div data-aos="fade-up" class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200">
         <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-3">
           <h3 class="text-lg font-medium">BundleFi</h3>
           <span class="text-sm text-slate-400">Frontend Developer</span>
         </div>
-    
         <ul class="list-disc list-inside text-slate-600 text-sm space-y-1 mb-4">
           <li>Developed SSR apps with Next.js</li>
-          <li>Maintained npm package</li>
+          <li>Create and maintain own npm package</li>
           <li>Refactored MySQL database</li>
           <li>Worked on PHP backend systems</li>
+          <li>Migrate PHP platform to a new Next.js project</li>
         </ul>
-    
         <div class="flex flex-wrap gap-2">
           <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">TypeScript</span>
           <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">React</span>
@@ -149,19 +104,18 @@
         </div>
       </div>
 
-      <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200">
+      <!-- MNG HEALTH -->
+      <div data-aos="fade-up" class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200">
         <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-3">
           <h3 class="text-lg font-medium">MNG Health</h3>
           <span class="text-sm text-slate-400">Frontend Developer</span>
         </div>
-    
         <ul class="list-disc list-inside text-slate-600 text-sm space-y-1 mb-4">
           <li>Fix application bugs, styles and malfunction</li>
           <li>Develop new features</li>
           <li>Create unit testing</li>
           <li>Migrated platform to a new configurable system</li>
         </ul>
-    
         <div class="flex flex-wrap gap-2">
           <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">JavaScript</span>
           <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">React</span>
@@ -171,13 +125,55 @@
           <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">Jest</span>
         </div>
       </div>
+
+      <!-- ARCSIGHT INVESTIGATE -->
+      <div data-aos="fade-up" class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-3">
+          <h3 class="text-lg font-medium">Arcsight Investigate</h3>
+          <span class="text-sm text-slate-400">JavaScript Developer</span>
+        </div>
+        <ul class="list-disc list-inside text-slate-600 text-sm space-y-1 mb-4">
+          <li>Fix application bugs, styles and malfunction</li>
+          <li>Develop new features</li>
+          <li>Create unit testing</li>
+          <li>Consulting</li>
+        </ul>
+        <div class="flex flex-wrap gap-2">
+          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">JavaScript</span>
+          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">React</span>
+          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">Redux</span>
+          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">SailsJS</span>
+          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">Docker</span>
+          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">SCSS</span>
+          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">Jest</span>
+        </div>
+      </div>
+
+      <!-- HIRING TOOL -->
+      <div data-aos="fade-up" class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-3">
+          <h3 class="text-lg font-medium">Hiring Tool</h3>
+          <span class="text-sm text-slate-400">Front End Developer</span>
+        </div>
+        <ul class="list-disc list-inside text-slate-600 text-sm space-y-1 mb-4">
+          <li>Fix application bugs, styles and malfunction</li>
+          <li>Develop new features</li>
+          <li>Consulting</li>
+        </ul>
+        <div class="flex flex-wrap gap-2">
+          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">JavaScript</span>
+          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">AngularJS</span>
+          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">MySQL</span>
+          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">SCSS</span>
+          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">HTML5</span>
+        </div>
+      </div>
     </section>
 
     <!-- SKILLS -->
     <section class="space-y-4">
-      <h2 class="text-xl font-semibold tracking-tight">Technical Skills</h2>
-
-      <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm">
+      <h2 data-aos="fade-up" class="text-xl font-semibold tracking-tight">Technical Skills</h2>
+      <div data-aos="fade-up" class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm">
         <div class="flex flex-wrap gap-2">
           <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">AngularJS</span>
           <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">Ant Design</span>
@@ -226,9 +222,9 @@
 
     <!-- NPM PACKAGES -->
     <section class="space-y-4">
-      <h2 class="text-xl font-semibold tracking-tight">npm packages</h2>
+      <h2 data-aos="fade-up" class="text-xl font-semibold tracking-tight">npm packages</h2>
 
-      <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm hover:shadow-md transition">
+      <div data-aos="fade-up" class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm hover:shadow-md transition">
         <h3 class="text-lg font-medium mb-2">react-smart-flexbox</h3>
         <a href="https://www.npmjs.com/package/react-smart-flexbox" target="_blank"
           class="text-sm text-slate-500 hover:text-slate-900 transition">
@@ -236,7 +232,7 @@
         </a>
       </div>
 
-      <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm hover:shadow-md transition">
+      <div data-aos="fade-up" class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm hover:shadow-md transition">
         <h3 class="text-lg font-medium mb-2">react-manage-form</h3>
         <a href="https://www.npmjs.com/package/react-manage-form" target="_blank"
           class="text-sm text-slate-500 hover:text-slate-900 transition">
@@ -247,20 +243,16 @@
 
     <!-- CONTACT -->
     <section class="space-y-4">
-      <h2 class="text-xl font-semibold tracking-tight">Contact</h2>
+      <h2 data-aos="fade-up" class="text-xl font-semibold tracking-tight">Contact</h2>
     
-      <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm hover:shadow-md transition">
-        
+      <div data-aos="fade-up" class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm hover:shadow-md transition">
         <div class="grid sm:grid-cols-3 gap-4">
-    
           <!-- Email -->
           <a href="mailto:fauri.1994@gmail.com"
             class="group flex items-center gap-3 p-4 rounded-lg border border-slate-200 hover:border-slate-300 hover:bg-slate-50 transition">
-    
-            <div class="w-10 h-10 flex items-center justify-center rounded-full bg-slate-100 text-slate-600 group-hover:bg-slate-200">
+            <div class="w-10 h-10 flex items-center justify-center rounded-full bg-slate-100 text-slate-600">
               ✉️
             </div>
-    
             <div class="flex flex-col">
               <span class="text-sm text-slate-400">Email</span>
               <span class="text-sm font-medium text-slate-700 group-hover:text-slate-900">
@@ -272,11 +264,9 @@
           <!-- LinkedIn -->
           <a href="https://www.linkedin.com/in/fauriciorojas/" target="_blank"
             class="group flex items-center gap-3 p-4 rounded-lg border border-slate-200 hover:border-slate-300 hover:bg-slate-50 transition">
-    
-            <div class="w-10 h-10 flex items-center justify-center rounded-full bg-slate-100 text-slate-600 group-hover:bg-slate-200">
+            <div class="w-10 h-10 flex items-center justify-center rounded-full bg-slate-100 text-slate-600">
               💼
             </div>
-    
             <div class="flex flex-col">
               <span class="text-sm text-slate-400">LinkedIn</span>
               <span class="text-sm font-medium text-slate-700 group-hover:text-slate-900">
@@ -288,11 +278,9 @@
           <!-- GitHub -->
           <a href="https://github.com/fauricioRojas" target="_blank"
             class="group flex items-center gap-3 p-4 rounded-lg border border-slate-200 hover:border-slate-300 hover:bg-slate-50 transition">
-    
-            <div class="w-10 h-10 flex items-center justify-center rounded-full bg-slate-100 text-slate-600 group-hover:bg-slate-200">
+            <div class="w-10 h-10 flex items-center justify-center rounded-full bg-slate-100 text-slate-600">
               🐙
             </div>
-    
             <div class="flex flex-col">
               <span class="text-sm text-slate-400">GitHub</span>
               <span class="text-sm font-medium text-slate-700 group-hover:text-slate-900">
@@ -300,9 +288,7 @@
               </span>
             </div>
           </a>
-    
         </div>
-    
       </div>
     </section>
 
@@ -310,7 +296,6 @@
     <footer class="text-center text-sm text-slate-400 pt-6">
       &copy; <span id="year"></span> Fauricio Rojas Hernández
     </footer>
-
   </div>
 
   <style>
@@ -319,9 +304,10 @@
     }
   </style>
 
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script>
+    AOS.init({ duration: 800, once: true });
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
-
 </body>
 </html>
