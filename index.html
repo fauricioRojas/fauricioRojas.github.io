@@ -14,7 +14,7 @@
   <!-- AOS Animations -->
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
-<body class="bg-slate-50 font-[Inter] text-slate-800">
+<body class="bg-gradient-to-br from-gray-100 via-gray-200 to-gray-300 font-[Inter] text-slate-800">
   <div class="max-w-4xl mx-auto px-4 py-10 space-y-10">
     <!-- HEADER -->
     <header data-aos="fade-down" class="flex flex-col items-center text-center space-y-4">
@@ -35,10 +35,11 @@
         </p>
       </div>
     </header>
+
     <!-- ABOUT -->
     <section class="space-y-4">
       <h2 data-aos="fade-up" class="text-xl font-semibold tracking-tight">About</h2>
-      <div data-aos="fade-up" class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm">
+      <div data-aos="fade-up" class="backdrop-blur-lg bg-white/30 border border-white/20 rounded-2xl shadow-xl p-6">
         <p class="text-slate-600 leading-relaxed">
           Hey! I'm Fauricio, I'm from Costa Rica. I specialize in full stack development with a strong focus on JavaScript.
           I enjoy building scalable applications, learning new technologies, and creating clean user experiences.
@@ -50,7 +51,7 @@
     <section class="space-y-4">
       <h2 data-aos="fade-up" class="text-xl font-semibold tracking-tight">Experience</h2>
       <!-- STONECASTLE -->
-      <div data-aos="fade-up" class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200">
+      <div data-aos="fade-up" class="backdrop-blur-lg bg-white/30 border border-white/20 rounded-2xl shadow-xl p-6 hover:-translate-y-0.5 transition-all duration-200">
         <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-3">
           <h3 class="text-lg font-medium">StoneCastle</h3>
           <span class="text-sm text-slate-400">Full Stack Developer</span>
@@ -62,26 +63,26 @@
           <li>Consulting</li>
         </ul>
         <div class="flex flex-wrap gap-2">
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">TypeScript</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">ReactJS</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">Auth0</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">MySQL</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">NodeJS</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">NestJS</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">TypeORM</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">GraphQL</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">DataLoaders</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">JSS</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">Ant Design</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">Jest</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">Enzyme</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">Reactstrap</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">InversifyJS</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">TypeScript</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">ReactJS</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">Auth0</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">MySQL</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">NodeJS</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">NestJS</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">TypeORM</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">GraphQL</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">DataLoaders</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">JSS</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">Ant Design</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">Jest</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">Enzyme</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">Reactstrap</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">InversifyJS</span>
         </div>
       </div>
     
       <!-- BUNDLEFI -->
-      <div data-aos="fade-up" class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200">
+      <div data-aos="fade-up" class="backdrop-blur-lg bg-white/30 border border-white/20 rounded-2xl shadow-xl p-6 hover:-translate-y-0.5 transition-all duration-200">
         <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-3">
           <h3 class="text-lg font-medium">BundleFi</h3>
           <span class="text-sm text-slate-400">Frontend Developer</span>
@@ -94,18 +95,18 @@
           <li>Migrate PHP platform to a new Next.js project</li>
         </ul>
         <div class="flex flex-wrap gap-2">
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">TypeScript</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">React</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">Next.js</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">GraphQL</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">MySQL</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">AWS</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">PHP</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">TypeScript</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">React</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">Next.js</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">GraphQL</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">MySQL</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">AWS</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">PHP</span>
         </div>
       </div>
 
       <!-- MNG HEALTH -->
-      <div data-aos="fade-up" class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200">
+      <div data-aos="fade-up" class="backdrop-blur-lg bg-white/30 border border-white/20 rounded-2xl shadow-xl p-6 hover:-translate-y-0.5 transition-all duration-200">
         <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-3">
           <h3 class="text-lg font-medium">MNG Health</h3>
           <span class="text-sm text-slate-400">Frontend Developer</span>
@@ -117,17 +118,17 @@
           <li>Migrated platform to a new configurable system</li>
         </ul>
         <div class="flex flex-wrap gap-2">
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">JavaScript</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">React</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">Redux</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">SCSS</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">Webpack</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">Jest</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">JavaScript</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">React</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">Redux</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">SCSS</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">Webpack</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">Jest</span>
         </div>
       </div>
 
       <!-- ARCSIGHT INVESTIGATE -->
-      <div data-aos="fade-up" class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200">
+      <div data-aos="fade-up" class="backdrop-blur-lg bg-white/30 border border-white/20 rounded-2xl shadow-xl p-6 hover:-translate-y-0.5 transition-all duration-200">
         <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-3">
           <h3 class="text-lg font-medium">Arcsight Investigate</h3>
           <span class="text-sm text-slate-400">JavaScript Developer</span>
@@ -139,18 +140,18 @@
           <li>Consulting</li>
         </ul>
         <div class="flex flex-wrap gap-2">
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">JavaScript</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">React</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">Redux</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">SailsJS</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">Docker</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">SCSS</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">Jest</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">JavaScript</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">React</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">Redux</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">SailsJS</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">Docker</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">SCSS</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">Jest</span>
         </div>
       </div>
 
       <!-- HIRING TOOL -->
-      <div data-aos="fade-up" class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200">
+      <div data-aos="fade-up" class="backdrop-blur-lg bg-white/30 border border-white/20 rounded-2xl shadow-xl p-6 hover:-translate-y-0.5 transition-all duration-200">
         <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-3">
           <h3 class="text-lg font-medium">Hiring Tool</h3>
           <span class="text-sm text-slate-400">Front End Developer</span>
@@ -161,11 +162,11 @@
           <li>Consulting</li>
         </ul>
         <div class="flex flex-wrap gap-2">
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">JavaScript</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">AngularJS</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">MySQL</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">SCSS</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">HTML5</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">JavaScript</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">AngularJS</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">MySQL</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">SCSS</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">HTML5</span>
         </div>
       </div>
     </section>
@@ -173,49 +174,49 @@
     <!-- SKILLS -->
     <section class="space-y-4">
       <h2 data-aos="fade-up" class="text-xl font-semibold tracking-tight">Technical Skills</h2>
-      <div data-aos="fade-up" class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm">
+      <div data-aos="fade-up" class="backdrop-blur-lg bg-white/30 border border-white/20 rounded-2xl shadow-xl p-6">
         <div class="flex flex-wrap gap-2">
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">AngularJS</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">Ant Design</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">Auth0</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">AWS</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">Bootstrap</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">C#</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">CSS</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">DataLoaders</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">Docker</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">Enzyme</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">ES6</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">Git/GitFlow</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">GitHub</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">GraphQL</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">HTML5</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">InversifyJS</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">Java</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">JavaScript</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">Jest</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">Jira</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">JSS</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">jQuery</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">Karma</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">MaterialUI</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">Mobx</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">MongoDB</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">MySQL</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">NestJS</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">NextJS</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">NodeJS</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">PHP</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">Python</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">ReactJS</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">Reactstrap</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">React Apollo</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">Redux</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">SailsJS</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">SCSS</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">TypeScript</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">TypeORM</span>
-          <span class="text-xs font-medium bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200">Webpack</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">AngularJS</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">Ant Design</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">Auth0</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">AWS</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">Bootstrap</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">C#</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">CSS</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">DataLoaders</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">Docker</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">Enzyme</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">ES6</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">Git/GitFlow</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">GitHub</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">GraphQL</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">HTML5</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">InversifyJS</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">Java</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">JavaScript</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">Jest</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">Jira</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">JSS</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">jQuery</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">Karma</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">MaterialUI</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">Mobx</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">MongoDB</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">MySQL</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">NestJS</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">NextJS</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">NodeJS</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">PHP</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">Python</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">ReactJS</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">Reactstrap</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">React Apollo</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">Redux</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">SailsJS</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">SCSS</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">TypeScript</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">TypeORM</span>
+          <span class="text-xs text-gray-700 font-medium bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30 shadow-sm">Webpack</span>
         </div>
       </div>
     </section>
@@ -224,7 +225,7 @@
     <section class="space-y-4">
       <h2 data-aos="fade-up" class="text-xl font-semibold tracking-tight">npm packages</h2>
 
-      <div data-aos="fade-up" class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm hover:shadow-md transition">
+      <div data-aos="fade-up" class="backdrop-blur-lg bg-white/30 border border-white/20 rounded-2xl shadow-xl p-6 hover:shadow-2xl transition">
         <h3 class="text-lg font-medium mb-2">react-smart-flexbox</h3>
         <a href="https://www.npmjs.com/package/react-smart-flexbox" target="_blank"
           class="text-sm text-slate-500 hover:text-slate-900 transition">
@@ -232,7 +233,7 @@
         </a>
       </div>
 
-      <div data-aos="fade-up" class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm hover:shadow-md transition">
+      <div data-aos="fade-up" class="backdrop-blur-lg bg-white/30 border border-white/20 rounded-2xl shadow-xl p-6 hover:shadow-2xl transition">
         <h3 class="text-lg font-medium mb-2">react-manage-form</h3>
         <a href="https://www.npmjs.com/package/react-manage-form" target="_blank"
           class="text-sm text-slate-500 hover:text-slate-900 transition">
@@ -245,12 +246,12 @@
     <section class="space-y-4">
       <h2 data-aos="fade-up" class="text-xl font-semibold tracking-tight">Contact</h2>
     
-      <div data-aos="fade-up" class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm hover:shadow-md transition">
+      <div data-aos="fade-up" class="backdrop-blur-lg bg-white/30 border border-white/20 rounded-2xl shadow-xl p-6 hover:shadow-2xl transition">
         <div class="grid sm:grid-cols-3 gap-4">
           <!-- Email -->
           <a href="mailto:fauri.1994@gmail.com"
-            class="group flex items-center gap-3 p-4 rounded-lg border border-slate-200 hover:border-slate-300 hover:bg-slate-50 transition">
-            <div class="w-10 h-10 flex items-center justify-center rounded-full bg-slate-100 text-slate-600">
+            class="group flex items-center gap-3 bg-white/40 backdrop-blur-md p-4 rounded-xl border border-white/30 shadow-sm">
+            <div class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 text-slate-600">
               ✉️
             </div>
             <div class="flex flex-col">
@@ -263,8 +264,8 @@
     
           <!-- LinkedIn -->
           <a href="https://www.linkedin.com/in/fauriciorojas/" target="_blank"
-            class="group flex items-center gap-3 p-4 rounded-lg border border-slate-200 hover:border-slate-300 hover:bg-slate-50 transition">
-            <div class="w-10 h-10 flex items-center justify-center rounded-full bg-slate-100 text-slate-600">
+            class="group flex items-center gap-3 bg-white/40 backdrop-blur-md p-4 rounded-xl border border-white/30 shadow-sm">
+            <div class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 text-slate-600">
               💼
             </div>
             <div class="flex flex-col">
@@ -277,8 +278,8 @@
     
           <!-- GitHub -->
           <a href="https://github.com/fauricioRojas" target="_blank"
-            class="group flex items-center gap-3 p-4 rounded-lg border border-slate-200 hover:border-slate-300 hover:bg-slate-50 transition">
-            <div class="w-10 h-10 flex items-center justify-center rounded-full bg-slate-100 text-slate-600">
+            class="group flex items-center gap-3 bg-white/40 backdrop-blur-md p-4 rounded-xl border border-white/30 shadow-sm">
+            <div class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 text-slate-600">
               🐙
             </div>
             <div class="flex flex-col">
